@@ -11,7 +11,7 @@ git checkout https://github.com/onelharrison/docker-gatech-cs7641.git
 
 cd docker-gatech-cs7641/
 
-docker build -t gatech-cs7641 .
+docker build -t onelharrison/gatech-cs7641 .
 ```
 
 Clone my template project repo for the course and run the container there. Feel free to run the container in your own project repo.
@@ -21,7 +21,7 @@ git clone https://github.com/onelharrison/gatech-cs7641-template.git ../gatech-c
 
 cd ../gatech-cs7641/
 
-docker run -d -v "$(pwd):/workspace/labs/" -p 9000:9000 --name gatech-ml gatech-cs7641
+docker run -d -v "$(pwd):/workspace/labs/" -p 9000:9000 --name gatech-ml onelharrison/gatech-cs7641
 ```
 
 View the container's logs for the link to the running instance of Jupyter Lab
